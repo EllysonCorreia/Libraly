@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Libraly - FAQ</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/theme.css"> 
+</head>
+<body>
+  
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">📚 Libraly</div>
+    
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="Buscar livros, autores...">
+      <button id="searchButton">🔍</button>
+    </div>
+
+    <button class="menu-toggle-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="main-nav">
+        <a href="index.html">Início</a>
+        <a href="pesquisa.html">Livros</a>
+        <a href="autores.html">Autores</a>
+        <a href="pedidos.html">Meus Pedidos</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="faq.html">FAQ</a> 
+        <button id="theme-toggle-btn">🌙</button>
+    </nav>
+  </header>
+
+  
+  <main class="faq-container">
+    <h1>Perguntas Frequentes</h1>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        Como faço para comprar um livro?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          É simples! Navegue pela nossa loja, encontre um livro que goste e clique nele para ir à página de detalhes. Lá, você pode clicar em "Comprar agora" para ir direto ao checkout, ou "Adicionar ao Carrinho" para continuar a comprar.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Quais métodos de pagamento vocês aceitam?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          Atualmente, aceitamos os principais cartões de crédito (Visa, MasterCard, etc.). Estamos a trabalhar para adicionar mais métodos de pagamento em breve.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Como posso rastrear o meu pedido?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          Assim que o seu pedido for enviado, você pode aceder à página "Meus Pedidos" no seu perfil. Lá, encontrará o status atual e um botão para ver o rastreio detalhado.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Posso cancelar um pedido?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          Se o pedido ainda não tiver sido processado ou enviado, você pode solicitar o cancelamento através da página "Meus Pedidos" ou entrando em contato connosco pela página "Contato".
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+          Passo a passo para solicitar troca (Lista)
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <div style="padding: 10px 25px;">
+              <p>Para trocas e devoluções, siga este processo:</p>
+              <ol style="padding-left: 20px; margin-bottom: 15px; color: #666;">
+                  <li>Entre na sua conta e vá em <i>Meus Pedidos</i>.</li>
+                  <li>Selecione o pedido que deseja trocar.</li>
+                  <li>Clique no botão <b>"Solicitar Devolução"</b>.</li>
+                  <li>Aguarde o código de postagem no seu e-mail.</li>
+              </ol>
+              <p>
+                  Para saber mais sobre seus direitos, consulte o 
+                  <a href="https://www.gov.br/defesa-do-consumidor" target="_blank" style="color: #ffc800; text-decoration: underline; font-weight: bold;">
+                      Site de Defesa do Consumidor
+                  </a>.
+              </p>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  
+  <footer>
+    <div class="footer-content">
+      
+      <div class="footer-brand">
+        <h3>📚 Libraly</h3>
+        <p>Descubra novos mundos.</p>
+        <div class="social-icons">
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="pesquisa.html">Livros</a>
+        <a href="autores.html">Autores</a>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Ajuda</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre Nós</a>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Conta</h4>
+        <a href="pedidos.html">Meus Pedidos</a>
+        <a href="carrinho.html">Meu Carrinho</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Libraly - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+    <script src="js/faq.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById("searchButton").addEventListener("click", () => {
+            const query = document.getElementById("searchInput").value.trim();
+            if (query) {
+                localStorage.setItem("searchQuery", query);
+                window.location.href = "pesquisa.html";
+            }
+        });
+        document.getElementById("searchInput").addEventListener("keypress", (e) => {
+            if (e.key === "Enter") document.getElementById("searchButton").click();
+        });
+    </script>
+</body>
+</html>
